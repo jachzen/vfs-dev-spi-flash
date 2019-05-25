@@ -739,7 +739,7 @@ static enum mgos_vfs_dev_err mgos_vfs_dev_spi_flash_get_erase_sizes(
   return MGOS_VFS_DEV_ERR_NONE;
 }
 
-static const struct mgos_vfs_dev_ops mgos_vfs_dev_spi_flash_ops = {
+const struct mgos_vfs_dev_ops mgos_vfs_dev_spi_flash_ops = {
     .open = mgos_vfs_dev_spi_flash_open,
     .read = mgos_vfs_dev_spi_flash_read,
     .write = mgos_vfs_dev_spi_flash_write,
